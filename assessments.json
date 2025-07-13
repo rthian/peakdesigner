@@ -1,34 +1,137 @@
 {
-    "Ray": [
+    "Ray Thian": [
         {
-            "role": "Lead Product Designer",
-            "self_scores": {
-                "Design Craft": 3,
+            "assessor": "Self",
+            "role": "Head of Design",
+            "scores": {
+                "Design Craft": 5,
                 "Research and User Understanding": 3,
                 "Collaboration and Communication": 3,
-                "Leadership and Mentoring": 3,
+                "Leadership and Mentoring": 5,
                 "Strategic Thinking and Impact": 3
             },
-            "manager_scores": null,
-            "peer_scores": [],
-            "averages": {
-                "Design Craft": 3.0,
-                "Research and User Understanding": 3.0,
-                "Collaboration and Communication": 3.0,
-                "Leadership and Mentoring": 3.0,
-                "Strategic Thinking and Impact": 3.0
-            },
-            "overall_average": 3.0,
-            "tomo": 0,
+            "tomo": 1,
             "tomo_scores": {
-                "play": 4,
+                "play": 7,
                 "purpose": 4,
+                "potential": 6,
+                "emotional": 4,
+                "economic": 6,
+                "inertia": 6
+            },
+            "timestamp": "2025-07-13T13:20:57.846250",
+            "status": "Approved"
+        },
+        {
+            "assessor": "Peer",
+            "assessor_name": "Ray Thian",
+            "role": "Head of Design",
+            "scores": {
+                "Design Craft": 3,
+                "Research and User Understanding": 3,
+                "Collaboration and Communication": 4,
+                "Leadership and Mentoring": 4,
+                "Strategic Thinking and Impact": 5
+            },
+            "tomo": -1,
+            "tomo_scores": {
+                "play": 3,
+                "purpose": 7,
                 "potential": 4,
                 "emotional": 4,
-                "economic": 4,
+                "economic": 7,
                 "inertia": 4
             },
-            "timestamp": "2025-07-13T11:28:05.498731"
+            "timestamp": "2025-07-13T13:21:18.657808",
+            "status": "Approved"
+        },
+        {
+            "assessor": "Self",
+            "role": "Head of Design",
+            "scores": {
+                "Design Craft": 5,
+                "Research and User Understanding": 3,
+                "Collaboration and Communication": 3,
+                "Leadership and Mentoring": 5,
+                "Strategic Thinking and Impact": 3
+            },
+            "tomo": 1,
+            "tomo_scores": {
+                "play": 7,
+                "purpose": 4,
+                "potential": 6,
+                "emotional": 4,
+                "economic": 6,
+                "inertia": 6
+            },
+            "timestamp": "2025-07-13T13:21:55.170372",
+            "status": "Pending Approval"
+        },
+        {
+            "assessor": "Self",
+            "role": "Head of Design",
+            "scores": {
+                "Design Craft": 1,
+                "Research and User Understanding": 1,
+                "Collaboration and Communication": 1,
+                "Leadership and Mentoring": 1,
+                "Strategic Thinking and Impact": 1
+            },
+            "tomo": 0,
+            "tomo_scores": {
+                "play": 1,
+                "purpose": 1,
+                "potential": 1,
+                "emotional": 1,
+                "economic": 1,
+                "inertia": 1
+            },
+            "timestamp": "2025-07-13T13:22:19.907075",
+            "status": "Pending Approval"
+        },
+        {
+            "assessor": "Self",
+            "role": "Head of Design",
+            "scores": {
+                "Design Craft": 1,
+                "Research and User Understanding": 1,
+                "Collaboration and Communication": 1,
+                "Leadership and Mentoring": 1,
+                "Strategic Thinking and Impact": 1
+            },
+            "tomo": 0,
+            "tomo_scores": {
+                "play": 1,
+                "purpose": 1,
+                "potential": 1,
+                "emotional": 1,
+                "economic": 1,
+                "inertia": 1
+            },
+            "timestamp": "2025-07-13T13:22:36.368016",
+            "status": "Pending Approval"
+        },
+        {
+            "assessor": "Self",
+            "role": "Head of Design",
+            "scores": {
+                "Design Craft": 1,
+                "Research and User Understanding": 1,
+                "Collaboration and Communication": 1,
+                "Leadership and Mentoring": 1,
+                "Strategic Thinking and Impact": 1
+            },
+            "tomo": 0,
+            "tomo_scores": {
+                "play": 1,
+                "purpose": 1,
+                "potential": 1,
+                "emotional": 1,
+                "economic": 1,
+                "inertia": 1
+            },
+            "timestamp": "2025-07-13T13:22:37.221618",
+            "status": "Pending Approval"
         }
     ]
 }
