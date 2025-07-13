@@ -1,34 +1,32 @@
 {
-    "Ray": [
+    "Ray Thian": [
         {
-            "role": "Lead Product Designer",
-            "self_scores": {
-                "Design Craft": 3,
-                "Research and User Understanding": 3,
-                "Collaboration and Communication": 3,
+            "assessor": "Peer",
+            "assessor_name": "Ray Thian",
+            "role": "Head of Design",
+            "scores": {
+                "Design Craft": 5,
+                "Research and User Understanding": 5,
+                "Collaboration and Communication": 5,
                 "Leadership and Mentoring": 3,
-                "Strategic Thinking and Impact": 3
+                "Strategic Thinking and Impact": 5
             },
-            "manager_scores": null,
-            "peer_scores": [],
-            "averages": {
-                "Design Craft": 3.0,
-                "Research and User Understanding": 3.0,
-                "Collaboration and Communication": 3.0,
-                "Leadership and Mentoring": 3.0,
-                "Strategic Thinking and Impact": 3.0
+            "timestamp": "2025-07-13T12:56:28.559864",
+            "status": "Approved"
+        },
+        {
+            "assessor": "Peer",
+            "assessor_name": "Ray Thian",
+            "role": "Head of Design",
+            "scores": {
+                "Design Craft": 5,
+                "Research and User Understanding": 5,
+                "Collaboration and Communication": 5,
+                "Leadership and Mentoring": 3,
+                "Strategic Thinking and Impact": 5
             },
-            "overall_average": 3.0,
-            "tomo": 0,
-            "tomo_scores": {
-                "play": 4,
-                "purpose": 4,
-                "potential": 4,
-                "emotional": 4,
-                "economic": 4,
-                "inertia": 4
-            },
-            "timestamp": "2025-07-13T11:28:05.498731"
+            "timestamp": "2025-07-13T12:56:38.469129",
+            "status": "Approved"
         }
     ]
 }
