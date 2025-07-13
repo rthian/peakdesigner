@@ -1,28 +1,6 @@
 {
     "Ray Thian": [
         {
-            "assessor": "Self",
-            "role": "Head of Design",
-            "scores": {
-                "Design Craft": 5,
-                "Research and User Understanding": 3,
-                "Collaboration and Communication": 3,
-                "Leadership and Mentoring": 5,
-                "Strategic Thinking and Impact": 3
-            },
-            "tomo": 1,
-            "tomo_scores": {
-                "play": 7,
-                "purpose": 4,
-                "potential": 6,
-                "emotional": 4,
-                "economic": 6,
-                "inertia": 6
-            },
-            "timestamp": "2025-07-13T13:20:57.846250",
-            "status": "Approved"
-        },
-        {
             "assessor": "Peer",
             "assessor_name": "Ray Thian",
             "role": "Head of Design",
@@ -131,7 +109,53 @@
                 "inertia": 1
             },
             "timestamp": "2025-07-13T13:22:37.221618",
-            "status": "Pending Approval"
+            "status": "Approved"
+        },
+        {
+            "assessor": "Self",
+            "role": "Head of Design",
+            "scores": {
+                "Design Craft": 1,
+                "Research and User Understanding": 1,
+                "Collaboration and Communication": 1,
+                "Leadership and Mentoring": 1,
+                "Strategic Thinking and Impact": 1
+            },
+            "tomo": 0,
+            "tomo_scores": {
+                "play": 1,
+                "purpose": 1,
+                "potential": 1,
+                "emotional": 1,
+                "economic": 1,
+                "inertia": 1
+            },
+            "timestamp": "2025-07-13T13:22:37.221618",
+            "status": "Approved"
+        }
+    ],
+    "Potato-001": [
+        {
+            "assessor": "Self",
+            "role": "Product Designer",
+            "scores": {
+                "Design Craft": 3,
+                "Research and User Understanding": 3,
+                "Collaboration and Communication": 3,
+                "Leadership and Mentoring": 5,
+                "Strategic Thinking and Impact": 5
+            },
+            "tomo": 3,
+            "tomo_scores": {
+                "play": 4,
+                "purpose": 7,
+                "potential": 7,
+                "emotional": 7,
+                "economic": 4,
+                "inertia": 4
+            },
+            "timestamp": "2025-07-13T15:23:28.954891",
+            "status": "Approved"
         }
     ]
 }

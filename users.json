@@ -1,6 +1,104 @@
 {
-    "Ray Thian": {
-        "title": "Head of Design",
-        "password": "RayThian"
+    "sadmin": {
+        "password": "admin",
+        "role": "Superadmin"
+    },
+    "Potato-001": {
+        "password": "p001",
+        "role": "Manager",
+        "title": "Product Designer",
+        "team": [
+            "Potato-002",
+            "Potato-003",
+            "Potato-004",
+            "Potato-006",
+            "Potato-005",
+            "Potato-007"
+        ]
+    },
+    "Potato-002": {
+        "password": "p002",
+        "role": "User",
+        "title": "Product Designer",
+        "team": null
+    },
+    "Potato-003": {
+        "password": "p003",
+        "role": "User",
+        "title": "Product Designer",
+        "team": null
+    },
+    "Potato-004": {
+        "password": "p004",
+        "role": "User",
+        "title": "Product Designer",
+        "team": null
+    },
+    "Potato-005": {
+        "password": "p005",
+        "role": "User",
+        "title": "Product Designer",
+        "team": null
+    },
+    "Potato-006": {
+        "password": "p006",
+        "role": "User",
+        "title": "Product Designer",
+        "team": null
+    },
+    "Potato-007": {
+        "password": "p007",
+        "role": "User",
+        "title": "Product Designer",
+        "team": null
+    },
+    "Potato-008": {
+        "password": "p008",
+        "role": "Manager",
+        "title": "Product Designer",
+        "team": [
+            "Potato-009",
+            "Potato-010",
+            "Potato-011",
+            "Potato-012",
+            "Potato-013",
+            "Potato-014"
+        ]
+    },
+    "Potato-009": {
+        "password": "p009",
+        "role": "User",
+        "title": "Product Designer",
+        "team": null
+    },
+    "Potato-010": {
+        "password": "p010",
+        "role": "User",
+        "title": "Product Designer",
+        "team": null
+    },
+    "Potato-011": {
+        "password": "p011",
+        "role": "User",
+        "title": "Product Designer",
+        "team": null
+    },
+    "Potato-012": {
+        "password": "p012",
+        "role": "User",
+        "title": "Product Designer",
+        "team": null
+    },
+    "Potato-013": {
+        "password": "p013",
+        "role": "User",
+        "title": "Product Designer",
+        "team": null
+    },
+    "Potato-014": {
+        "password": "p014",
+        "role": "User",
+        "title": "Product Designer",
+        "team": null
     }
 }
