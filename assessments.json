@@ -157,5 +157,29 @@
             "timestamp": "2025-07-13T15:23:28.954891",
             "status": "Approved"
         }
+    ],
+    "Potato-008": [
+        {
+            "assessor": "Self",
+            "role": "Product Designer",
+            "scores": {
+                "Design Craft": 5,
+                "Research and User Understanding": 5,
+                "Collaboration and Communication": 5,
+                "Leadership and Mentoring": 5,
+                "Strategic Thinking and Impact": 5
+            },
+            "tomo": -1,
+            "tomo_scores": {
+                "play": 6,
+                "purpose": 7,
+                "potential": 5,
+                "emotional": 5,
+                "economic": 7,
+                "inertia": 7
+            },
+            "timestamp": "2025-07-13T17:23:39.759532",
+            "status": "Approved"
+        }
     ]
 }

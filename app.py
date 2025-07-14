@@ -179,35 +179,20 @@ else:
         data = load_data(DATA_FILE)
         users = load_data(USERS_FILE)
 
-        # Submission Stats
-        st.subheader("Submission Stats")
-        total_submissions = sum(len(data.get(u, [])) for u in users if u != 'sadmin')
-        total_approved = sum(len([a for a in data.get(u, []) if a.get('status', 'Approved') == 'Approved']) for u in users if u != 'sadmin')
-        total_pending = sum(len([a for a in data.get(u, []) if a.get('status') == 'Pending Approval']) for u in users if u != 'sadmin')
-        total_rejected = sum(len([a for a in data.get(u, []) if a.get('status') == 'Rejected']) for u in users if u != 'sadmin')
-        st.write(f"Total Submissions: {total_submissions}")
-        st.write(f"Approved: {total_approved}")
-        st.write(f"Pending: {total_pending}")
-        st.write(f"Rejected: {total_rejected}")
+        tabs = st.tabs(["Submission Stats", "Manage Assessments", "People"])
+        with tabs[0]:
+            # Submission Stats
+            st.subheader("Submission Stats")
+            total_submissions = sum(len(data.get(u, [])) for u in users if u != 'sadmin')
+            total_approved = sum(len([a for a in data.get(u, []) if a.get('status', 'Approved') == 'Approved']) for u in users if u != 'sadmin')
+            total_pending = sum(len([a for a in data.get(u, []) if a.get('status') == 'Pending Approval']) for u in users if u != 'sadmin')
+            total_rejected = sum(len([a for a in data.get(u, []) if a.get('status') == 'Rejected']) for u in users if u != 'sadmin')
+            st.write(f"Total Submissions: {total_submissions}")
+            st.write(f"Approved: {total_approved}")
+            st.write(f"Pending: {total_pending}")
+            st.write(f"Rejected: {total_rejected}")
 
-        # List of user scores and stats
-        st.subheader("User Assessment Overview")
-        pending_count = 0
-        for u in users:
-            if u == 'sadmin': continue
-            u_assess = data.get(u, [])
-            approved = len([a for a in u_assess if a.get('status', 'Approved') == 'Approved'])
-            pending = len([a for a in u_assess if a.get('status') == 'Pending Approval'])
-            rejected = len([a for a in u_assess if a.get('status') == 'Rejected'])
-            if pending > 0:
-                pending_count += pending
-            st.write(f"{u} ({users[u]['title']}): Approved={approved}, Pending={pending}, Rejected={rejected}")
-
-        if pending_count > 0:
-            if st.button("Go to Approval Section"):
-                st.session_state["show_manage"] = True
-
-        if st.session_state.get("show_manage", False):
+        with tabs[1]:
             st.subheader("Manage Assessments")
             all_assessments = []
             for uname, uassess in data.items():
@@ -246,6 +231,45 @@ else:
                                 del data[uname]
                             save_data(data, DATA_FILE)
                             st.success("Deleted!")
+
+        with tabs[2]:
+            # People tab for user details and role assignment
+            st.subheader("People")
+            selected_user = st.selectbox("Select User", [u for u in users if u != 'sadmin'])
+            if selected_user:
+                st.write(f"User: {selected_user}")
+                current_title = users[selected_user]["title"]
+                new_title = st.selectbox("Assign Title", ROLES, index=ROLES.index(current_title))
+                if new_title != current_title:
+                    if st.button("Confirm Title Change"):
+                        users[selected_user]["title"] = new_title
+                        save_data(users, USERS_FILE)
+                        st.success("Title updated!")
+
+                # View states and scores
+                u_assess = data.get(selected_user, [])
+                if u_assess:
+                    st.subheader("Assessment Overview")
+                    approved = len([a for a in u_assess if a.get('status', 'Approved') == 'Approved'])
+                    pending = len([a for a in u_assess if a.get('status') == 'Pending Approval'])
+                    rejected = len([a for a in u_assess if a.get('status') == 'Rejected'])
+                    st.write(f"Approved: {approved}, Pending: {pending}, Rejected: {rejected}")
+
+                    # Compute scores if approved assessments exist
+                    approved_assess = [a for a in u_assess if a.get('status', 'Approved') == 'Approved']
+                    if approved_assess:
+                        all_scores = {}
+                        for assess in approved_assess:
+                            for crit, score in assess['scores'].items():
+                                if crit not in all_scores:
+                                    all_scores[crit] = []
+                                all_scores[crit].append(score)
+                        averages = {crit: sum(scores)/len(scores) for crit, scores in all_scores.items()}
+                        overall_avg = sum(averages.values()) / len(averages) if averages else 0
+                        st.write(f"Overall Average Score: {overall_avg:.2f}/5")
+                        st.table(averages)
+                else:
+                    st.write("No assessments yet.")
 
         # User management
         st.subheader("User Management")
